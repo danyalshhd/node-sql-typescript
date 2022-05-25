@@ -1,0 +1,39 @@
+{
+  "name": "simple-rest-api-typescript-nodejs-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts --exec ts-node",
+    "test": "jest --watchAll --no-cache"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "author": "Danyal",
+  "license": "ISC",
+  "dependencies": {
+    "@dstransaction/common": "^1.0.29",
+    "@types/mysql2": "github:types/mysql2",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "supertest": "^6.2.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^27.0.1",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^13.13.4",
+    "@types/supertest": "^2.0.11",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.3",
+    "ts-jest": "^27.0.2",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  }
+}
