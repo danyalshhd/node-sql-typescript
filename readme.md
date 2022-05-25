@@ -1,6 +1,6 @@
 # API Demo
 
-Postman collection attached with sample body
+Postman collection attached with sample body by the name Babbel.postman_collection.json on root folder
 
 # How to run
 
