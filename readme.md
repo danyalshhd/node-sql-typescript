@@ -8,6 +8,7 @@ Postman collection attached with sample body by the name Babbel.postman_collecti
 $ npm install
 $ npm run dev # run for developer
 $ npm run build # run build for production
+$ npn run test # test the routes
 ```
 
 # Deploy
