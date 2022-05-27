@@ -1,6 +1,6 @@
 # API Demo
 
-Postman collection attached with sample body
+Postman collection attached with sample body by the name Babbel.postman_collection.json on root folder
 
 # How to run
 
@@ -8,6 +8,7 @@ Postman collection attached with sample body
 $ npm install
 $ npm run dev # run for developer
 $ npm run build # run build for production
+$ npn run test # test the routes
 ```
 
 # Deploy
