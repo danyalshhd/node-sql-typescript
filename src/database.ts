@@ -8,7 +8,6 @@ export async function connect() {
         password: '',
         database: 'babbel',
         connectionLimit: 10,
-        //socketPath: '/var/run/mysqld/mysqld.sock'
     });
 
     return connection;
