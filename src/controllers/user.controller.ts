@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-import { connect } from '../database'
-import { Post } from '../interface/Post';
+import { connect } from '../database';
 import { User } from '../interface/User';
 
 export async function getUsers(req: Request, res: Response, next: NextFunction): Promise<Response> {
@@ -18,7 +17,6 @@ export async function getUsers(req: Request, res: Response, next: NextFunction):
 
 export async function createUser(req: Request, res: Response) {
     const newUser: User = req.body;
-    //console.log()
     try {
         const conn = await connect();
         await conn.query('INSERT INTO users SET ?', [newUser]);
@@ -42,9 +40,9 @@ export async function deleteUser(req: Request, res: Response) {
 
 export async function updateUser(req: Request, res: Response) {
     const id = req.params.id;
-    const updatePost: Post = req.body;
+    const updateUser: User = req.body;
     const conn = await connect();
-    await conn.query('UPDATE users SET ? WHERE id = ?', [updatePost, id]);
+    await conn.query('UPDATE users SET ? WHERE id = ?', [updateUser, id]);
     return res.json({
         message: 'User updated'
     });
